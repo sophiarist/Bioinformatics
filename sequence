@@ -1,0 +1,26 @@
+SEQUENCE = "ATTAGC"
+
+numA = 0
+numT = 0
+numG = 0
+numC = 0
+
+for i in SEQUENCE:
+   if i=="A":
+    numA = numA + 1
+
+for i in SEQUENCE:
+   if i=="T":
+     numT = numT + 1
+
+for i in SEQUENCE:
+   if i=="G":
+     numG = numG + 1
+
+for i in SEQUENCE:
+   if i=="C":
+     numC = numC + 1
+
+total = numC+numA+numT+numG
+
+print float(numA)/float(total)*100, float(numG)/float(total)*100, float(numT)/float(total)*100, float(numC)/float(total)*100
