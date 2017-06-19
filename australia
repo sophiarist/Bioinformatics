@@ -1,0 +1,3 @@
+X = "AUSTRALIA"
+for i in X:
+	print i
