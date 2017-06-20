@@ -1,0 +1,6 @@
+SEQUENCE = "ATTAGCAAATCG"
+
+TOTAL = numA+numT+numG+numC
+
+for SEQUENCE IN TOTAL:
+    

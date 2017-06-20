@@ -1,0 +1,4 @@
+SEQUENCE = "ATGAAATCAAAG"
+
+for i in range(0,12,3):
+   print SEQUENCE[i:i+3]
