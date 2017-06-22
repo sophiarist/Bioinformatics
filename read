@@ -1,0 +1,4 @@
+import re
+pizza = "big bag of bugs"
+S = re.sub("g", "t", pizza)
+print S
