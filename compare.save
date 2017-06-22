@@ -1,0 +1,3 @@
+pink = open("uni.aln", "r")
+X = pink.readlines()
+print X

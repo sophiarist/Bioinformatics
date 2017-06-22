@@ -1,0 +1,4 @@
+file = open("uni", "r")
+X = file.readlines()
+print X
+

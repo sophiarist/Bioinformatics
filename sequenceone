@@ -1,0 +1,103 @@
+SEQUENCE = "TACTGCAAATACCTATACTAACTATTAATAATATTTTTTTATATCATTTCAATAATTTTATTGTGATGAT\
+ATATTAATTCAGCACAATGAGGATAATAAAATCAAACAATTGGGCTAAATGATGGCGGTTTTACGGTACC\
+ACTTAAGTTATCACTGTTAGTAGTCACTTTAAAGCCCGGTCACAATGTCCCCATTTTTATGATCTATTTT\
+TCCGACATTGTGGACACTCAAAAATATGCAATATACAAACAGTTCTTGCCAAAGAAATTATTCACGATTT\
+TTTATTACGCGTAATAAAAAATCAGAAATATAATTATCTTCATAAAAAAATTTTACTTTGAGTTCTTTAG\
+GTTGCATTGAATATACTCCATCCATAATTAATGCCGGAATAACTTCATCATCAAGCCATTTTTTGATTTT\
+CATGGCAAACGGTTTCTTGGAATGATGAATAAGATTACAAAATCCAGATAAATTAATAAATTTAGTCTTC\
+TTATCCAATGTTTTTGGTATAGAGTTAGATTCAATAGGAAAATTATTACGTATTTCTTCAAAAATCAATC\
+TATTACAAGATTCAACATGAATGGAAATAGCCTTTTTATCATCGTTGTATCCTAAAAATCTAGCAACTTC\
+AGCACCATAAATCCAAACATCCCATTTACCATCTCTTTTATCCACAAAGAATGATGTAAATCTCTTGCCC\
+TCGAATTGAAATATATTATTATTCACATCGATAATACTGGTTTTATCACCATCTTTTACCTGAAGATTAT\
+TATAAAGTTCTCTACATTTGGCAAATTTAGCATTTTTGAGAATATTGAGACAAGATTCTGGAGAAATATA\
+TTCTTTCTCATTAATTATAACCGGATTATGATCTTTAATCTTACTTGCATACGCAACAGGATTCTTTGAT\
+CCTATTATTTTTTCAACAAAATCATATAAAGATATATATCCTTTTTTAGTCATGCTCATATCTTTCTCTT\
+TTAAAATTCTCAACAAGTTTTTTCTCATAATTTTCTAATAAATATATCAACCAATTCTCTATACCATTAA"
+
+
+#protein dictionary
+protein = {}
+protein['TTT'] = "F"
+protein['TTC'] = "F"
+protein['TTA'] = "L"
+protein['TTG'] = "L"
+
+protein['CTT'] = "L"
+protein['CTC'] = "L"
+protein['CTA'] = "L"
+protein['CTG'] = "L"
+
+protein['ATT'] = "I"
+protein['ATC'] = "I"
+protein['ATA'] = "I"
+protein['ATG'] = "M" #only if starting codon
+
+protein['GTT'] = "V"
+protein['GTC'] = "V"
+protein['GTA'] = "V"
+protein['GTG'] = "V"
+
+protein['TCT'] = "S"
+protein['TCC'] = "S"
+protein['TCA'] = "S"
+protein['TCG'] = "S"
+
+protein['TAT'] = "Y"
+protein['TAC'] = "Y"
+protein['TAA'] = " "
+protein['TAG'] = " "
+
+protein['TGT'] = "C"
+protein['TGC'] = "C"
+protein['TGA'] = " "
+protein['TGG'] = "W"
+
+protein['CCT'] = "P"
+protein['CCC'] = "P"
+protein['CCA'] = "P"
+protein['CCG'] = "P"
+
+protein['ACT'] = "T"
+protein['ACC'] = "T"
+protein['ACA'] = "T"
+protein['ACG'] = "T"
+
+protein['GCT'] = "A"
+protein['GCC'] = "A"
+protein['GCA'] = "A"
+protein['GCG'] = "A"
+
+protein['CAT'] = "H"
+protein['CAC'] = "H"
+protein['CAA'] = "Q"
+protein['CAG'] = "Q"
+
+protein['AAT'] = "N"
+protein['AAC'] = "N"
+protein['AAA'] = "K"
+protein['AAG'] = "K"
+
+protein['GAT'] = "D"
+protein['GAC'] = "D"
+protein['GAA'] = "E"
+protein['GAG'] = "E"
+
+protein['CGT'] = "R"
+protein['CGC'] = "R"
+protein['CGA'] = "R"
+protein['CGG'] = "R"
+
+protein['AGT'] = "S"
+protein['AGC'] = "S"
+protein['AGA'] = "R"
+protein['AGG'] = "R"
+
+protein['GGT'] = "G"
+protein['GGC'] = "G"
+protein['GGA'] = "G"
+protein['GGG'] = "G"
+
+s = ""
+for i in range(0,len(SEQUENCE),3):
+  s+=protein[SEQUENCE[i:i+3]]
+print s

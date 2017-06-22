@@ -1,0 +1,6 @@
+blue = open("list","r")
+X = blue.readlines()
+s = ""
+for i in range(3):
+   s = s + X[i].strip()
+print s
