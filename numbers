@@ -1,0 +1,7 @@
+import re
+SEQUENCE = "If I got to 123 Devon Lane Rm 1229"
+SEQUENCE = re.sub("1","",SEQUENCE)
+SEQUENCE = re.sub("2","",SEQUENCE)
+SEQUENCE = re.sub("3","",SEQUENCE)
+SEQUENCE = re.sub("9","",SEQUENCE)
+print SEQUENCE
