@@ -1,0 +1,12 @@
+SEQUENCE = "Betty Botter had some butter but she said this butter's bitter if I bake this bitter butter it would make my batter bitter but a bit of better butter that would make my batter better so she bought a bit of butter better than her bitter butter and she baked it in her batter and the batter was not bitter so 'twas better Betty Botter bought a bit of better butter"
+
+X=SEQUENCE.split()
+di = {}
+for i in X:
+  if i in di.keys():
+     di[i]=di[i]+1
+  else:
+    di[i]=1
+for key in di:
+   print key,
+   print di[key]    
