@@ -1,0 +1,3 @@
+x =raw_input("height ")
+y =raw_input("length ")
+print "Area is",float(x)*float(y)

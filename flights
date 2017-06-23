@@ -1,0 +1,13 @@
+file = open("/share/data/FlightID","r")
+X = file.readlines ()
+dict = {}
+for i in X:
+  S = i.split ()
+  dict[S[0]] = S[1], S[2]
+while True:
+  Y = raw_input("ID ")
+  if Y in dict.keys():
+    print dict[Y]
+  if (Y == "quit"):
+    break   
+  

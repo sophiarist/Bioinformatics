@@ -1,0 +1,10 @@
+file = open("/share/data/states.txt","r")
+X = file.readlines ()
+dict = {}
+for i in X:
+  S = i.split ()
+  dict[S[0]] = S[1]
+Y = raw_input("Abbreviation ")
+if Y in dict.keys():
+    print dict[Y]
+

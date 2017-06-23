@@ -1,0 +1,10 @@
+file = open("/share/data/zipcodes.csv","r")
+X = file.readlines ()
+dict = {}
+for i in X:
+  S = i.split ()
+  dict[S[1]] = S[0]
+Y = raw_input("City ")
+if Y in dict.keys():
+    print dict[Y]
+
