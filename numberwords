@@ -1,0 +1,16 @@
+n = 919
+a = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
+b = ['', 'ten', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
+c = ['', 'one hundred', 'two hundred', 'three hundred', 'four hundred', 'five hundred', 'six hundred', 'seven hundred', 'eight hundred', 'nine hundred']
+third = (n%10)
+second = ((n%100)-third)/10
+first = (n/100)
+secondthird = (n%100)
+if n<20:
+ print a[n]
+elif 0<n<100:
+ print b[first], a[second]
+elif 0<n<1000:
+ print c[first], b[second], a[third]
+elif 0<secondthird<19:
+ print c[first], a[secondthird]
